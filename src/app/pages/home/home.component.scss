@@ -1,0 +1,164 @@
+
+.carouselle {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  height: 90vh;
+  width: 100%;
+}
+.carouselle2 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 90vh;
+    width: 100%;
+  }
+  
+  .year {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 0, 0);
+    opacity: 0.7;
+  }
+
+  .overlay-sm {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 0, 0);
+    opacity: 0.7;
+  }
+  
+  .carousel-inner img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+.home-video{ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.orange{
+  background-color: #ff7900;
+  border-color: #ff7900;
+}
+.text-orange{
+  color: #ff7900; 
+}
+
+.titre1{
+  position: absolute;
+  top: 8vw;
+  left: 5vw;
+  font-size: 5vw; 
+}
+
+.titre2{
+  position: absolute;
+  top: 20vw;
+  left: 5vw;
+  font-size: 1.5vw;
+  color: whitesmoke;
+}
+.titre3{
+  position: absolute;
+  top: 23vw;
+  left: 5vw;
+  font-size: 2vw;
+  color: whitesmoke;
+}
+.btn-1{
+  position: absolute;
+  top: 26vw;
+  left: 5vw;
+  font-size: 1.3vw;
+  color: whitesmoke;
+}
+
+
+.image-div {
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  height: 80%;
+}
+
+.image-div img {  
+  width: 110%;  
+  transition: transform 0.3s ease;
+}
+.image-div.animate img {
+  opacity: 1;
+}
+
+
+.image-div:hover img {
+  transform: translateX(-5%);
+}
+.image-div.fade-in img {
+  opacity: 1;
+}
+
+/* Define the slideInLeft animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+ 
+
+.to-animate{
+  opacity: 0;
+}
+.fade-in-animation {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
